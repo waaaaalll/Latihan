@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wall........</title>
+    <title>wall..........</title>
+    <style>
+      .card{
+        background-color: #00FF00;
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        border-radius: 20px;
+        border: 2px rgb(17, 17, 17) solid;
+        }
+        h1{
+          margin-top: 10px;
+          font-size: 25px;
+        }
+        input {
+          border-radius: 5px;
+        }
+        input:hover {
+          background-color: gray;
+        }
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgb(79, 79, 218);
+        }
+        button {
+          background-color: white;
+          margin-left: 225px;
+          color: black;
+          border-radius: 7px;
+        }
+        button:hover {
+          background-color: #191970;
+          color: white;
+        }
+    </style>
 </head>
 <body>
-    <center>Silahkan Melakukan Registrasi</center>
+  <div class="card">
+    <center><h1>Silahkan Melakukan Registrasi</h1>/<center>
     <form action="proses_register.php" method="post" >
 
     <table>
@@ -23,11 +63,13 @@
             <td><input type="password" name="password"></td>
         </tr>
         <tr>
-            <td><button type="submit" name="submit">Daftar</button></td>
+            <td colspan="2"><button type="submit" name="submit">Daftar</button></td>
         </tr>
+        <tr>
+          <td colspan="2">sudah memiliki akun?<a href="index.php"> silahkan klik disini</a></td>
+       </tr>
     </table>
-
-
     </form>
+  </div>
 </body>
 </html>
